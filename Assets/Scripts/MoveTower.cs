@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class MoveTower : MonoBehaviour
 {
-    public float rotationSpeed = 150f;
-
+    public float rotationspeed = 150f;
+    
     void Update()
     {
         if(Input.GetAxis("Horizontal") != 0)
         {
             float horizontal = Input.GetAxis("Horizontal");
-            transform.Rotate(0, -horizontal * rotationSpeed * Time.deltaTime, 0);
+            transform.Rotate(0, -horizontal * rotationspeed * Time.deltaTime, 0);
         }
     }
 }
